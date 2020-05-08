@@ -8,7 +8,7 @@ header-img: img/062.jpg
 catalog: true
 tags:
     - Flink
-    - 执行流程
+    - checkpoint
 ---
 
 **问题现象：**Flink UI界面查看checkpoint的metrics发现一直没有做checkpoint，仔细排查发现有部分subtask的状态是finished。
