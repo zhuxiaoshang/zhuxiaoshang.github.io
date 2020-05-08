@@ -11,18 +11,17 @@ github_repo: "https://github.com/zhuxiaoshang/zhuxiaoshang.github.io.git" # you 
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "Goals determine what you going to be!"
+sidebar-about-description: "热衷于大数据实时计算 Flink"
 sidebar-avatar: /img/my_love.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
 # SNS settings
 RSS: false
-# weibo_username:     qiubaiying
 zhihu_username:     
 github_username:    
 facebook_username:  
-jianshu_username:   
+jianshu_username:   〇白衣卿相〇
 #twitter_username:   
 
 
@@ -64,9 +63,9 @@ gitalk:
   enable: true    #是否开启Gitalk评论
   clientID: f2c84e7629bb1446c1a4                            #生成的clientID
   clientSecret: ca6d6139d1e1b8c43f8b2e19492ddcac8b322d0d    #生成的clientSecret
-  repo: qiubaiying.github.io    #仓库名称
-  owner: qiubaiying    #github用户名
-  admin: qiubaiying
+  repo: zhuxiaoshang.github.io    #仓库名称
+  owner: zhuxiaoshang    #github用户名
+  admin: zhuxiaoshang
   distractionFreeMode: true #是否启用类似FB的阴影遮罩
 
 
