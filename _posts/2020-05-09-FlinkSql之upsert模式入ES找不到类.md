@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      FlinkSql upsert模式入ES找不到类
-subtitle:   java.lang.ClassNotFoundException: org.apache.flink.table.typeutils.TypeCheckUtils
+title:      FlinkSql之upsert模式入ES找不到类
+subtitle:   FlinkSql之upsert模式入ES找不到类
 date:       2020-05-09
 author:     Sun.Zhu
 header-img: img/040.jpg
