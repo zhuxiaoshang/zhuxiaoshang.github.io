@@ -2,7 +2,7 @@
 layout:     post
 title:      记一次flink不做checkpoint的问题
 subtitle:   记一次flink不做checkpoint的问题
-date:       2020-04-16
+date:       2020-04-13
 author:     Sun.Zhu
 header-img: img/062.jpg
 catalog: true
