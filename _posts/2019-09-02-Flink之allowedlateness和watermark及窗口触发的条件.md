@@ -9,7 +9,7 @@ catalog: true
 tags:
     - Flink
     - watermark
-    -allowedLateness
+    - allowedLateness
 ---
 
 allowedlateness  时间( P)=窗口的endtime+allowedlateness ，作为窗口被释放时间。globle window的默认allowedlateness 为Long.MAX_VALUE,其他窗口默认都是0，所以如果不配置allowedlateness 的话在水印触发了窗口计算后窗口被销毁
