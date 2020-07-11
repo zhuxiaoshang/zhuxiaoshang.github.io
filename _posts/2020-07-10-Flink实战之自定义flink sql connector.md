@@ -29,9 +29,7 @@ CREATE TABLE XXX(
 
 3. Factory中的requiredContext、supportedProperties都比较重要，框架中对Factory的过滤和检查需要他们
 
-4. 需要自定义个TableSink，根据你需要连接的中间件选择是AppendStreamTableSink、Upsert、Retract
-
-重写consumeDataStream方法
+4. 需要自定义个TableSink，根据你需要连接的中间件选择是AppendStreamTableSink、Upsert、Retract,并重写consumeDataStream方法
 
 5. 自定义一个SinkFunction，在invoke方法中实现将数据写入到外部中间件。
 
