@@ -14,6 +14,7 @@ tags:
 ## 背景
 最近工作中需要自定义开发一些flink sql的connector，因为官方提供的connector毕竟有限，在我们工作中可能会用到各种各样的中间件。所以官方没有提供的就需要我们自定义开发。
 就是如：
+```sql
 CREATE TABLE XXX(
 		A STRING,
 		B BIGINT)
@@ -21,6 +22,7 @@ CREATE TABLE XXX(
 		'connect.type' = 'kafka',
 		...
 		)
+```
 所以开发一个自己的connector需要做哪些，本文就来总结一下开发的主要步骤，以及我遇到的问题怎么解决的。
 ## 开发
 1. 自定义Factory，根据需要实现StreamTableSourceFactory和StreamTableSinkFactory
