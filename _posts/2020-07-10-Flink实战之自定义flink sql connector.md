@@ -142,6 +142,9 @@ CREATE TABLE XXX(
 
    实现一个emitDataStream空方法，重写consumeDataStream即可
 
+ 	> 注意：flink 1.11版本emitDataStream方法已被移除
+   ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200713002306967.png)
+   
    ```java
    @Override
    	public DataStreamSink<?> consumeDataStream(DataStream<Row> dataStream) {
@@ -153,6 +156,13 @@ CREATE TABLE XXX(
    ```
 暂时还没涉及到TableFormat的自定义，如果后面涉及到这方面的开发再来分享
    
+
+## 关于调试
+代码开发完后，整个编译一下flink的代码（如果之前编译过，那么只需要编译你的新工程即可）。
+有两种方法进行测试
+1. 整个编译完后会在flink-dist下生成flink的运行包，并把你的connector包放到lib目录下，通过bin/start-cluster.sh启动单机环境，再通过sql client来测试。如果代码改动后只需要把你的工程重新打包即可。
+2. idea里面进行调试（比较推荐这种方式），可以一行行的debug。
+
 
 详细代码可以参考我的git项目
 [https://github.com/zhuxiaoshang/flink-be-god/tree/branch_1.10/flink-connector/flink-sql-connector-customized/src/main/java/sql/connector/customized](https://github.com/zhuxiaoshang/flink-be-god/tree/branch_1.10/flink-connector/flink-sql-connector-customized/src/main/java/sql/connector/customized)
