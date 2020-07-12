@@ -142,7 +142,7 @@ CREATE TABLE XXX(
 
    实现一个emitDataStream空方法，重写consumeDataStream即可
 
- 	> 注意：flink 1.11版本emitDataStream方法已被移除
+ > 注意：flink 1.11版本emitDataStream方法已被移除
    ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200713002306967.png)
    
    ```java
